@@ -115,7 +115,7 @@ There are fewer knobs. That is intentional.
 Docling v2 provides the `DocumentConverter` API, supports `PdfPipelineOptions`, exposes document content through a `DoclingDocument`, iterates document items in reading order, and exports Markdown directly from the document object. It is the backbone of the PDF parsing step.
 
 ### LangChain OpenAI
-The processor uses `ChatOpenAI` through `langchain-openai`. LangChain’s Python docs show that `ChatOpenAI` supports image input and uses the `OPENAI_API_KEY` environment variable for authentication, which is exactly what this project relies on for figure, table, and formula descriptions.
+The processor uses `ChatOpenAI` through `langchain-openai`. LangChain’s  docs show that `ChatOpenAI` supports image input and uses the `OPENAI_API_KEY` environment variable for authentication, which is exactly what this project relies on for figure, table, and formula descriptions.
 
 ### PyPDF
 PyPDF is used only for one thing: counting pages before page-wise processing begins.
@@ -129,7 +129,7 @@ Create and activate a clean environment first.
 ### Conda
 
 ```bash
-conda create -n docproc python=3.11
+conda create -n docproc python=3.12
 conda activate docproc
 pip install -r requirements.txt
 ```
